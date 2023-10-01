@@ -33,10 +33,14 @@ body {
 
 .list {
   list-style: none;
-  color: var(--NAVY-BLUE);
+  color: var(--SLATE);
 }
 
 .list:focus {
+  color: var(--OCEAN);
+}
+
+.list:hover {
   color: var(--OCEAN);
 }
 
