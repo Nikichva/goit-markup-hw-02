@@ -1,17 +1,23 @@
+:root {
+  --IRIS: #4d5ae5;
+  --NAVY-BLUE: #2e2f42;
+  --CLOUD: #f4f4fd;
+  --SLATE: #434455;
+  --WHITE: #ffffff;
+  --OCEAN: #404bbf;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 2%;
-  color: #434455;
-  background-color: #ffffff;
+  color: var(--SLATE);
+  background-color: var(--WHITE);
 }
 
-:root {
-  background-color: #ffffff;
-}
 .logo {
-  color: var(--IRIS, #4d5ae5);
+  color: var(--IRIS);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -27,25 +33,25 @@ body {
 
 .list {
   list-style: none;
-  color: #2e2f42;
+  color: var(--NAVY-BLUE);
 }
 
 .list:focus {
-  color: #404bbf;
+  color: var(--OCEAN);
 }
 
 .logo-black {
-  color: var(--NAVY-BLUE, #2e2f42);
+  color: var(--NAVY-BLUE);
   font-family: "Raleway", sans-serif;
 }
 
 .logo-white {
-  color: var(--CLOUD, #f4f4fd);
+  color: var(--CLOUD);
   font-family: "Raleway", sans-serif;
 }
 
 .nav-link {
-  color: #2e2f42;
+  color: var(--NAVY-BLUE);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -56,15 +62,19 @@ body {
 }
 
 .nav-link:active {
-  color: #404bbf;
+  color: var(--OCEAN);
 }
 
 .nav-link:hover {
-  color: #404bbf;
+  color: var(--OCEAN);
+}
+
+.nav-link:focus {
+  color: var(--OCEAN);
 }
 
 .nav-contact {
-  color: var(--SLATE, #434455);
+  color: var(--SLATE);
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -76,20 +86,20 @@ body {
 }
 
 .nav-contact:hover {
-  color: #404bbf;
+  color: var(--OCEAN);
 }
 
 .nav-contact:active {
-  color: #404bbf;
+  color: var(--OCEAN);
 }
 
 .dark-bg {
-  background: var(--NAVY-BLUE, #2e2f42);
+  background: var(--NAVY-BLUE);
 }
 
 .blue-button {
-  background: var(--IRIS, #4d5ae5);
-  color: var(--WHITE, #fff);
+  background: var(--IRIS);
+  color: var(--WHITE);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -100,14 +110,14 @@ body {
 }
 
 .blue-button:focus {
-  background-color: #404bbf;
+  background-color: var(--OCEAN);
 }
 .blue-button:hover {
-  background: var(--OCEAN, #404bbf);
+  background: var(--OCEAN);
 }
 
 .third-text {
-  color: var(--NAVY-BLUE, #2e2f42);
+  color: var(--NAVY-BLUE);
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
@@ -116,17 +126,21 @@ body {
   letter-spacing: 0.4px;
 }
 .card-text {
-  color: var(--SLATE, #434455);
+  color: var(--SLATE);
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%;
-  letter-spacing: 0.32px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.card {
+  background-color: var(--WHITE);
 }
 
 .first-header {
-  color: var(--WHITE, #fff);
+  color: var(--WHITE);
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 56px;
@@ -136,7 +150,7 @@ body {
   letter-spacing: 1.12px;
 }
 .second-header {
-  color: var(--NAVY-BLUE, #2e2f42);
+  color: var(--NAVY-BLUE);
   text-align: center;
   font-family: Roboto;
   font-size: 36px;
@@ -147,20 +161,34 @@ body {
   text-transform: capitalize;
 }
 
+.second-header-portfolio {
+  color: var(--NAVY-BLUE);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
 .light-bg {
-  background: var(--CLOUD, #f4f4fd);
+  background: var(--CLOUD);
 }
 .footer {
-  background: var(--NAVY-BLUE, #2e2f42);
+  background: var(--NAVY-BLUE);
 }
 
 .footer-text {
-  color: var(--CLOUD, #f4f4fd);
+  color: var(--CLOUD);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .filter-button {
-  background-color: #f4f4fd;
-  color: #4d5ae5;
+  background-color: var(--CLOUD);
+  color: var(--IRIS);
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -172,14 +200,11 @@ body {
 }
 
 .filter-button:hover {
-  background-color: #404bbf;
-  color: #ffffff;
+  background-color: var(--OCEAN);
+  color: var(--WHITE);
 }
 
 .filter-button:focus {
-  color: #ffffff;
-  background-color: #404bbf;
-}
-.card {
-  background-color: #ffffff;
+  color: var(--WHITE);
+  background-color: var(--OCEAN);
 }
