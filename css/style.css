@@ -153,6 +153,12 @@ body {
   line-height: 107.143%;
   letter-spacing: 1.12px;
 }
+
+.first-header-black {
+  color: var(--SLATE);
+  text-transform: uppercase;
+}
+
 .second-header {
   color: var(--NAVY-BLUE);
   text-align: center;
